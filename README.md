@@ -8,6 +8,8 @@ The system uses Vuforia’s image recognition pipeline to detect predefined visu
 
 The project is deployed as both a Windows application and an Android APK.
 
+Link Demo: https://youtu.be/4vPuH-QUpCM
+
 ---
 
 ## Core Idea (Computer Vision Focus)
