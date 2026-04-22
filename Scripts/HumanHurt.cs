@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class AudioMerger : MonoBehaviour
+public class HumanHurt : MonoBehaviour
 {
     public AudioClip clip1;      // đoạn âm thanh đầu
     public AudioClip clip2;      // đoạn âm thanh sau
