@@ -4,7 +4,7 @@
 
 The Odyssey 11 is an Augmented Reality system that combines Computer Vision and real-time rendering to create an interactive storytelling experience.
 
-The system uses Vuforia’s image recognition pipeline to detect predefined visual markers and trigger corresponding 3D scenes in Unity. This allows static images to function as real-time visual anchors for a structured narrative system.
+The system uses Vuforia’s image target detection and tracking pipeline to detect predefined visual markers and trigger corresponding 3D scenes in Unity. This allows static images to function as visual anchors for placing AR content in 3D space.
 
 The project is deployed as both a Windows application and an Android APK.
 
@@ -14,19 +14,19 @@ Link Demo: https://youtu.be/4vPuH-QUpCM
 
 ## Core Idea (Computer Vision Focus)
 
-This project focuses on **image-based visual recognition and tracking in augmented reality environments**.
+This project applies computer vision techniques through Vuforia for real-time image tracking in augmented reality environments.
 
-Each image in the storybook acts as a visual feature descriptor that is tracked in real-time using Vuforia’s computer vision engine. Once detected, the system maps the image to a predefined AR scene, enabling dynamic scene activation.
+Each image in the storybook is registered as an Image Target, from which visual features are extracted and tracked in real time by Vuforia’s computer vision engine. Once detected, the system maps the image to a predefined AR scene, enabling dynamic scene activation.
 
-This forms a simple but effective **image-to-scene recognition pipeline**.
+This forms a simple but effective image-to-scene mapping pipeline.
 
 ---
 
 ## Computer Vision Pipeline
 
-1. Image Target Detection (Vuforia Feature Tracking)
-2. Feature Matching and Pose Estimation
-3. Scene Mapping (Image ID → AR Scene)
+1. Image Target Detection (Vuforia)
+2. Feature-based Tracking and Pose Estimation (handled by Vuforia)
+3. Scene Mapping (Image Target → AR Scene)
 4. Real-time 3D Rendering (Unity Engine)
 
 ---
@@ -35,7 +35,7 @@ This forms a simple but effective **image-to-scene recognition pipeline**.
 
 - Input: Physical book images (6 image targets)
 - Vision Module: Vuforia Engine (feature-based image tracking)
-- Mapping Layer: Image ID → Scene Controller
+- Mapping Layer: Image Target → Scene Controller
 - Rendering Engine: Unity 3D runtime
 - Output: Real-time AR scene overlay
 
@@ -52,7 +52,7 @@ The story follows “The Odyssey 11”, a classified lunar mission where previou
 - Unity Engine
 - Vuforia Engine (Computer Vision / Image Tracking)
 - C#
-- Augmented Reality (AR Core Concept)
+- Augmented Reality (AR)
 
 ---
 
@@ -67,18 +67,20 @@ Both builds use the same vision pipeline for real-time image tracking and scene 
 
 ## Project Type
 
-- Computer Vision (Image-based Tracking)
+- Computer Vision (Image-based Tracking - applied via Vuforia)
 - Augmented Reality System
-- Real-time Scene Recognition Pipeline
+- Real-time Scene Mapping Pipeline
 
 ---
 
 ## Key Highlights
 
-- Implemented image-based tracking pipeline using Vuforia
-- Designed mapping system between visual features and AR scenes
-- Built real-time AR rendering system using Unity
-- Cross-platform deployment (Windows + Android)
+- Implemented an image-based tracking system using Vuforia Image Targets
+- Designed a mapping system between Image Targets and AR scenes
+- Built a real-time AR rendering pipeline using Unity
+- Deployed cross-platform (Windows + Android)
+
+---
 
 ## Author
 Nguyen Minh Nhan
