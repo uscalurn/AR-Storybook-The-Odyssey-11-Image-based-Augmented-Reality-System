@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class bienhinh : MonoBehaviour
+public class EffectTransform : MonoBehaviour
 {
     public float speed = 0f;                   // Tốc độ di chuyển
     public float delayBeforeSwitch = 2f;       // Thời gian chờ trước khi biến hình
