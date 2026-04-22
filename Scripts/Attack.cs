@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class NgaBayVaXoay : MonoBehaviour
+public class Attack : MonoBehaviour
 {
     public Animator animator;
 
