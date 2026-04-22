@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class RetreatAfterHutSinhLuc : MonoBehaviour
+public class Retreat : MonoBehaviour
 {
     public Animator animator;
     public string hutsinhlucStateName = "hutsinhluc";
