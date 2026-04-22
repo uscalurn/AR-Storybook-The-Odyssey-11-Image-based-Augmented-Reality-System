@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class taubaylen : MonoBehaviour
+public class TheSpacecraftFlewup: MonoBehaviour
 {
     public float speed = 2f;                // Tốc độ bay lên
     public float delayBeforeFly = 3f;       // Thời gian khởi động trước khi bay
