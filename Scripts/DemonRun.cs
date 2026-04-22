@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class runbienhinh : MonoBehaviour
+public class DemonRun : MonoBehaviour
 {
     public float speed = 2f;                   // Tốc độ di chuyển
     public float delayBeforeSwitch = 2f;       // Thời gian chờ trước khi biến hình
