@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class quaivatrunsound : MonoBehaviour
+public class DemonRunSound : MonoBehaviour
 {
     public AudioSource audioSource;
     public List<AudioClip> footstepSounds;
